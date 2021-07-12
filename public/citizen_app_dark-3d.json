@@ -296,8 +296,8 @@
           "match",
           ["feature-state", "highlight"],
           "true",
-          "rgba(64, 64, 64, 1)",
-          "#FF2640"
+          "#FF2640",
+          "rgba(64, 64, 64, 1)"
         ],
         "fill-extrusion-translate-anchor": "map",
         "fill-extrusion-vertical-gradient": true,
