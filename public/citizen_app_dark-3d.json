@@ -73,6 +73,35 @@
         "fill-extrusion-vertical-gradient": true,
         "fill-extrusion-translate": [0, 0]
       }
+    },
+    {
+      "id": "poi_label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["==", "$type", "Point"],
+        ["==", "rank", 1],
+        ["!in", "class", "railway"],
+        ["!in", "subclass", "subway", "bus_stop", "station", "attraction"]
+      ],
+      "layout": {
+        "text-font": ["Open Sans Bold"],
+        "text-size": {"base": 1.4, "stops": [[10, 8], [20, 15]]},
+        "text-field": "{name_en}",
+        "text-anchor": "top",
+        "text-offset": [0, 0.5],
+        "text-max-width": 8,
+        "text-letter-spacing": 0
+      },
+      "paint": {
+        "text-color": "rgba(179, 179, 179, 1)",
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 4
+      }
     }
   ],
   "id": "dcw4s3azo"
