@@ -54,7 +54,6 @@
       "type": "fill-extrusion",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 0,
       "filter": ["all"],
       "paint": {
         "fill-extrusion-base": {"type": "identity", "property": "min_height"},
