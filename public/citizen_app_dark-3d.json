@@ -11,15 +11,15 @@
   "glyphs": "https://maps.sp0n.io/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
-      "id": "road_medium case",
+      "id": "road_large_ramps case",
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 11,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["all", ["in", "class", "minor"]]
+        ["all", ["in", "class", "motorway", "trunk"], ["==", "ramp", 1]]
       ],
       "layout": {
         "line-cap": "butt",
@@ -28,8 +28,8 @@
       },
       "paint": {
         "line-color": "rgba(38, 38, 38, 1)",
-        "line-width": {"base": 1.5, "stops": [[13, 0.25], [20, 12]]},
-        "line-gap-width": {"base": 1.55, "stops": [[13, 1], [20, 12]]}
+        "line-width": {"base": 1.5, "stops": [[12, 0.5], [20, 16]]},
+        "line-gap-width": {"base": 1.55, "stops": [[11, 1], [20, 12]]}
       }
     },
     {
