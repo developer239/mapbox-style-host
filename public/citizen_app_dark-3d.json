@@ -48,6 +48,16 @@
         "fill-color": "rgba(34, 38, 42, 1)",
         "fill-outline-color": "rgba(0, 0, 0, 1)"
       }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "paint": {
+        "fill-color": "rgba(38, 38, 38, 1)",
+        "fill-outline-color": "rgba(8, 8, 8, 1)"
+      }
     }
   ],
   "id": "dcw4s3azo"
