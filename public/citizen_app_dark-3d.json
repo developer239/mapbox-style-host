@@ -50,16 +50,6 @@
       }
     },
     {
-      "id": "building",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "building",
-      "paint": {
-        "fill-color": "rgba(38, 38, 38, 1)",
-        "fill-outline-color": "rgba(8, 8, 8, 1)"
-      }
-    },
-    {
       "id": "building-3d",
       "type": "fill-extrusion",
       "source": "openmaptiles",
