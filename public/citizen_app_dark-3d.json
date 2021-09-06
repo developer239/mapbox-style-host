@@ -23,6 +23,21 @@
       "filter": ["==", "class", "grass"],
       "layout": {"visibility": "visible"},
       "paint": {"fill-color": "rgba(15, 21, 21, 1)"}
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "stream", "river", "canal"]
+      ],
+      "paint": {
+        "line-color": "rgba(34, 38, 42, 1)",
+        "line-width": {"base": 1.4, "stops": [[8, 0.5], [20, 15]]}
+      }
     }
   ],
   "id": "dcw4s3azo"
