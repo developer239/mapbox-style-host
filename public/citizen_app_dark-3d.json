@@ -11,14 +11,15 @@
   "glyphs": "https://maps.sp0n.io/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
-      "id": "road_xlarge",
+      "id": "road_medium",
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["all", ["in", "class", "motorway", "trunk"], ["!=", "ramp", 1]]
+        ["all", ["in", "class", "minor"]]
       ],
       "layout": {
         "line-cap": "round",
@@ -27,7 +28,29 @@
       },
       "paint": {
         "line-color": "rgba(0, 0, 0, 1)",
-        "line-width": {"base": 1.5, "stops": [[6, 2], [20, 40]]}
+        "line-width": {"base": 1.5, "stops": [[6, 0.25], [20, 24]]}
+      }
+    },
+    {
+      "id": "road_medium case",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["all", ["in", "class", "minor"]]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "miter",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(38, 38, 38, 1)",
+        "line-width": {"base": 1.5, "stops": [[13, 0.25], [20, 12]]},
+        "line-gap-width": {"base": 1.55, "stops": [[13, 1], [20, 12]]}
       }
     }
   ],
