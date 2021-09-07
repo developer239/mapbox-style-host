@@ -140,7 +140,7 @@
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 12,
-      "filter": ["==", "$type", "LineString"],
+      "filter": ["all", ["==", "$type", "LineString"]],
       "layout": {
         "text-font": ["Open Sans Bold"],
         "text-size": {"base": 1.4, "stops": [[10, 8], [20, 15]]},
