@@ -140,7 +140,7 @@
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 12,
-      "filter": ["all", ["==", "$type", "LineString"]],
+      "filter": ["==", "$type", "LineString"],
       "layout": {
         "text-font": ["Open Sans Bold"],
         "text-size": {"base": 1.4, "stops": [[10, 8], [20, 15]]},
@@ -166,7 +166,6 @@
       "source": "openmaptiles",
       "source-layer": "building",
       "minzoom": 15,
-      "filter": ["all"],
       "paint": {
         "fill-extrusion-base": {"type": "identity", "property": "min_height"},
         "fill-extrusion-height": {
