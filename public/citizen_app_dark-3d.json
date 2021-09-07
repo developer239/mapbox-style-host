@@ -54,7 +54,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 14,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -76,7 +76,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -97,7 +97,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 8,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -118,6 +118,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -138,8 +139,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 8,
-      "maxzoom": 24,
+      "minzoom": 16,
       "filter": ["all", ["==", "$type", "LineString"]],
       "layout": {
         "text-font": ["Open Sans Bold"],
@@ -165,7 +165,7 @@
       "type": "fill-extrusion",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 0,
+      "minzoom": 16,
       "filter": ["all"],
       "paint": {
         "fill-extrusion-base": {"type": "identity", "property": "min_height"},
@@ -191,7 +191,6 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "minzoom": 16,
-      "maxzoom": 24,
       "filter": [
         "all",
         ["==", "$type", "Point"],
