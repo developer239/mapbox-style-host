@@ -76,7 +76,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 15,
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -97,7 +97,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 15,
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -118,7 +118,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 15,
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -165,7 +165,7 @@
       "type": "fill-extrusion",
       "source": "openmaptiles",
       "source-layer": "building",
-      "minzoom": 15,
+      "minzoom": 14,
       "paint": {
         "fill-extrusion-base": {"type": "identity", "property": "min_height"},
         "fill-extrusion-height": {
